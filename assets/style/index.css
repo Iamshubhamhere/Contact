@@ -36,3 +36,94 @@ main {
   margin-inline: auto;
   text-align: center;
 }
+
+h2 {
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* -----------------------------------*/
+/* Input                              */
+/* -----------------------------------*/
+
+.input {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: solid 1px #000;
+    color: #fff;
+    padding: 5px 5px;
+    margin-bottom: 10px;
+    text-align: left;
+    width: 300px;
+    height: 55px;
+    border-radius: 5px;
+}
+
+/* -----------------------------------*/
+/* Button                             */
+/* -----------------------------------*/
+
+button {
+    display: inline-block;
+    margin: auto;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    width: 125px;
+    height: 53px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: #fff;
+    background-color: var(--app-green);
+    transition: all 0.3s ease-in-out;
+}
+  
+button:hover {
+    letter-spacing: 0.5px;
+    color: #000;
+}
+
+
+/* -----------------------------------*/
+/* Contact                            */
+/* -----------------------------------*/
+
+.grid {
+    height: 500px;
+    width: 500px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: #000 1px solid;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.5);
+}
+
+
+/* -----------------------------------*/
+/* Responsiveness                     */
+/* -----------------------------------*/
+
+@media (max-width: 768px) {
+    h2 {
+        margin-top: 200px;
+    }
+
+    .input {
+        width: calc(50% - 12px);
+        margin-top: 10px;
+        align-items: center;
+    }
+    button {
+        width: 50%;
+    }
+    .grid {
+        width: 400px;
+        height: 400px;
+        grid-template-columns:100px 100px 100px;
+    }
+}
