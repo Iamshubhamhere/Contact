@@ -53,8 +53,10 @@ h1 {
     text-align: center;
 }
 form {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  
   
 }
 
