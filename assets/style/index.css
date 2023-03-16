@@ -60,6 +60,10 @@ h2 {
     border-radius: 5px;
 }
 
+input::placeholder {
+    color: #fff;
+}
+
 /* -----------------------------------*/
 /* Button                             */
 /* -----------------------------------*/
@@ -93,8 +97,8 @@ button:hover {
 /* -----------------------------------*/
 
 .grid {
-    height: 500px;
-    width: 500px;
+    min-height: 600px;
+    min-width: 600px;
     display: grid;
     grid-template-columns: 200px 200px 200px;
     background-color: rgba(0, 0, 0, 0.3);
@@ -110,11 +114,11 @@ button:hover {
 
 @media (max-width: 768px) {
     h2 {
-        margin-top: 200px;
+        padding-top: 75px;
     }
 
     .input {
-        width: calc(50% - 12px);
+        min-width: calc(50% - 10px);
         margin-top: 10px;
         align-items: center;
     }
@@ -122,8 +126,8 @@ button:hover {
         width: 50%;
     }
     .grid {
-        width: 400px;
-        height: 400px;
+        width: 75%;
+        height: 75%;
         grid-template-columns:100px 100px 100px;
     }
 }
