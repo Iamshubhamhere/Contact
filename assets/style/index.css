@@ -91,7 +91,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  color: var(--app-blue);
+  color: var(--app-dark-bg);
 }
 
 input+input {
@@ -111,9 +111,11 @@ p {
   color: var(--app-green);
   font-size: 18px;
 }
-.display1{
+#display1{
   text-align: left;
   margin-top: 5px;
+  font-size: 18px;
+  color: var(--app-green);
 }
 .display2{
   text-align: center;
@@ -132,7 +134,7 @@ p {
   grid-template-rows: 1fr 1fr 1fr ;
   gap: 5px 5px;
   grid-auto-flow: row;
-  transform: rotate(180deg) scaleX(-1);
+
 }
 
 .center2 {
