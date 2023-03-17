@@ -34,11 +34,8 @@ body {
 }
 
 main {
-
   display: grid;
   place-items: center;
- 
-  
 }
 
 h1 {
@@ -53,6 +50,7 @@ h1 {
 .center{
     text-align: center;
 }
+
 form {
   display: inline-block;
   grid-template-columns: 1fr 1fr;
@@ -62,7 +60,6 @@ form {
 }
 
 input[type=text] {
-
   width: 440px;
   height: 38px;
   border: 1px solid rgb(255 255 255 / 0.1);
@@ -73,7 +70,6 @@ input[type=text] {
   text-align: left;
   padding-left:5px;
   line-height: 38px;
-
 }
 
 input[type=submit] {
@@ -88,7 +84,6 @@ input[type=submit] {
   color: #fff;
   letter-spacing: 0.4px;
   cursor: pointer;
-
 }
 
 input[type=submit]:hover {
@@ -98,6 +93,7 @@ input[type=submit]:hover {
 input+input {
   margin-left: 10px;
 }
+
 .output-text {
   width: 260px;
   height: 60px;
@@ -108,34 +104,33 @@ input+input {
 }
 
 p {
-  
   color: var(--app-green);
   font-size: 18px;
 }
-#display1{
+
+#display1 {
   text-align: left;
   margin-top: 5px;
   font-size: 18px;
   color: var(--app-green);
 }
+
 .display2{
   text-align: center;
   margin-top: 90px;
 }
-#shape-grid {
 
+#shape-grid {
   height: 300px;
   width: 1000px;
   padding: 5px;
   margin: 25px auto 0;
   border-radius: 5px;
- 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
   gap: 10px 12px;
   grid-auto-flow: row;
-
 }
 
 .center2 {

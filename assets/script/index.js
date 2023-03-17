@@ -5,7 +5,8 @@
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
 
- 'use strict'
+'use strict'
+
  const valMessage = document.querySelectorAll('.display1');
  const disMessage = document.querySelector('.display2');
  const grid = document.querySelector('#shape-grid');
@@ -65,6 +66,7 @@ document.querySelector('.form').addEventListener('submit', function (event){
         valMessage.innerHTML = 'Please enter all three values separated by commas.';
         return;
       }
+      // using regex
       else{
         const nameCheck = /^[a-zA-Z\s]*$/.test(name.trim());
         const cityCheck = /^[a-zA-Z\s]*$/.test(city.trim());
@@ -86,6 +88,8 @@ document.querySelector('.form').addEventListener('submit', function (event){
             newDiv.style.fontSize = "16px";
             newDiv.style.textAlign="left";
             newDiv.style.backgroundColor= "rgba(255, 255, 255, 0.171)";
+            newDiv.style.padding= '10px';
+            newDiv.style.borderRadius= '3px';
             newDiv.innerHTML = `
               <div class="name">Name: ${newContact.name}</div>
               <div class="city">City: ${newContact.city}</div>
