@@ -128,7 +128,7 @@ p {
   border-radius: 5px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   gap: 10px 12px;
   grid-auto-flow: row;
 }
@@ -136,6 +136,15 @@ p {
 .center2 {
   display: flex;
   justify-content: center;
+}
+
+.contact {
+  color: #f1f1f1;
+  font-size: 16px;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.171);
+  padding: 10px;
+  border-radius: 3px;
 }
 
 /* -----------------------------------*/
