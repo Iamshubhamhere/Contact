@@ -76,7 +76,7 @@ input[type=submit] {
   width: 100px;
   height: 38px;
   text-align: center;
-  background-color: var(--app-green);
+  background-color: var(--app-red);
   border: 1px solid rgba(255, 255, 255, 0.171);
   border-radius: 6px;
   font-size: 18px;
@@ -87,7 +87,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  color: var(--app-blue);
+  background-color: var(--app-red-hover);
 }
 
 input+input {
@@ -116,8 +116,12 @@ p {
 }
 
 .display2{
-  text-align: center;
+  text-align: right;
   margin-top: 90px;
+  font-size: 23px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.3px;
 }
 
 #shape-grid {
