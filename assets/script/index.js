@@ -98,6 +98,7 @@ document.querySelector('.form').addEventListener('submit', function listContacts
 
               count++;
               document.querySelector('.display2').innerHTML = `Total contacts: ${count}`;
+              // Calling listContacts() function
               newContact.listContacts();
         }
       } 
