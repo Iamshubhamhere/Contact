@@ -116,8 +116,9 @@ p {
 }
 
 .display2{
-  text-align: right;
-  margin-top: 90px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
   font-size: 23px;
   text-transform: uppercase;
   font-weight: 600;
@@ -172,5 +173,14 @@ p {
 
     input[type=submit] {
         margin-bottom: 10px;
+    }
+
+    .display2 {
+      position: fixed;
+      margin: auto;
+      margin-top: 50px;
+      min-height: 50px;
+      right: 20px;
+      bottom: 20px;
     }
 }
