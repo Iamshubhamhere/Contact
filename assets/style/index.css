@@ -137,3 +137,27 @@ p {
   display: flex;
   justify-content: center;
 }
+
+/* -----------------------------------*/
+/* responsiveness                     */
+/* -----------------------------------*/
+
+@media (max-width: 768px) {
+    .container {
+    width:80%;
+    max-width: 600px;
+    min-width:400px;
+    max-height:1200px;
+    margin:0 auto;
+    text-align: center;
+    }
+
+    input[type=text] {
+        width: calc(100% - 10px);
+        margin-bottom: 10px;
+    }
+
+    input[type=submit] {
+        margin-bottom: 10px;
+    }
+}
