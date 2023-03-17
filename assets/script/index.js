@@ -46,7 +46,7 @@
     }
   
     listContacts() {
-      return `${this.#name} \n${this.#city}\n ${this.#email}`;
+      return `Name: ${this.#name} \n City: ${this.#city}\n Email: ${this.#email}`;
     }
   }
 
@@ -63,6 +63,7 @@ document.querySelector('.form').addEventListener('submit', function (event){
     if (inputArray.length < 3) {
         const valMessage = document.querySelector('#display1');
         valMessage.innerHTML = 'Please enter all three values separated by commas.';
+        return;
       }
       else{
         const nameCheck = /^[a-zA-Z\s]*$/.test(name.trim());
@@ -75,9 +76,35 @@ document.querySelector('.form').addEventListener('submit', function (event){
       } else if (!emailCheck) {
         document.querySelector('#display1').innerHTML= 'Invalid email';
       }
-        
+        else{
+            const newContact = new contact(name, city, email);
+            list.push(newContact);
+            
+            const newDiv = document.createElement('div');
+            newDiv.classList.add('contact');
+            newDiv.style.color = "#f1f1f1";
+            newDiv.style.fontSize = "16px";
+            newDiv.style.textAlign="left";
+            newDiv.style.backgroundColor= "rgba(255, 255, 255, 0.171)";
+            newDiv.innerHTML = `
+              <div class="name">Name: ${newContact.name}</div>
+              <div class="city">City: ${newContact.city}</div>
+              <div class="email">Email: ${newContact.email}</div>
+            `;
+            grid.append(newDiv);
+      
+            inputContact.value = '';
+            newDiv.onclick = function(){
+                this.remove();
+                count--;
+                document.querySelector('.display2').innerHTML = `Total contacts: ${count}`;
+              }
+              count++;
+              document.querySelector('.display2').innerHTML = `Total contacts: ${count}`;
+        }
       } 
-   
+     
+    
   });
   
 

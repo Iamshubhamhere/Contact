@@ -47,6 +47,7 @@ h1 {
   font-weight: 600;
   margin-bottom: 16px;
   text-align: center;
+  letter-spacing: 1px;
 }
 
 .center{
@@ -91,7 +92,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  color: var(--app-dark-bg);
+  color: var(--app-blue);
 }
 
 input+input {
@@ -119,11 +120,11 @@ p {
 }
 .display2{
   text-align: center;
-  margin-top: 10px;
+  margin-top: 90px;
 }
 #shape-grid {
 
-  height: 450px;
+  height: 300px;
   width: 1000px;
   padding: 5px;
   margin: 25px auto 0;
@@ -131,8 +132,8 @@ p {
  
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr ;
-  gap: 5px 5px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+  gap: 10px 12px;
   grid-auto-flow: row;
 
 }
