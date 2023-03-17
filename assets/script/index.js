@@ -66,11 +66,12 @@ document.querySelector('.form').addEventListener('submit', function (event){
         valMessage.innerHTML = 'Please enter all three values separated by commas.';
         return;
       }
-      // using regex
+      // using regex to help validate
       else{
         const nameCheck = /^[a-zA-Z\s]*$/.test(name.trim());
         const cityCheck = /^[a-zA-Z\s]*$/.test(city.trim());
         const emailCheck = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim());
+
     if(!nameCheck) {
         document.querySelector('#display1').innerHTML = 'Invalid name';
       } else if (!cityCheck) {
